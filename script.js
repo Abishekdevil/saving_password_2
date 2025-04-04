@@ -55,8 +55,9 @@ async function getSHA256Hash() {
   return cached;
 }
 
+
 async function main() {
-  sha256HashView.innerHTML = 'Calculating...';
+  sha256HashView.innerHTML = 'Calculating....';
   const hash = await getSHA256Hash();
   sha256HashView.innerHTML = hash;
 }
